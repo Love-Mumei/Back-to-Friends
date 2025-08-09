@@ -1,0 +1,97 @@
+// Include LCD library
+#include <Adafruit_LiquidCrystal.h>
+
+Adafruit_LiquidCrystal lcd_1(0);  // Use default I2C address
+
+void setup() {
+  lcd_1.begin(16, 2);       // Set LCD size to 16 columns and 2 rows
+  lcd_1.setBacklight(1);    // Turn on backlight
+}
+
+void loop() {
+    // Line 1
+  lcd_1.clear();
+  lcd_1.setCursor(0,0);
+  lcd_1.print("how");
+  delay(400);
+  lcd_1.print(" can");
+  delay(360);
+  lcd_1.print(" we");
+  delay(490);
+  lcd_1.print(" go");
+  delay(650);
+
+  lcd_1.setCursor(0,1);
+  lcd_1.print("back");
+  delay(450);
+  lcd_1.print(" to");
+  delay(550);
+  lcd_1.print(" being");
+  delay(550);
+
+  lcd_1.clear();
+  lcd_1.setCursor(0,0);
+  lcd_1.print("friends");
+  delay(700);
+
+  // Line 2
+  lcd_1.clear();
+  lcd_1.setCursor(0,0);
+  lcd_1.print("when");
+  delay(500);
+  lcd_1.print(" we");
+  delay(450);
+  lcd_1.print(" just");
+  delay(400);
+  
+  lcd_1.setCursor(0,1);
+  lcd_1.print("shared");
+  delay(750);
+  lcd_1.print(" a");
+  delay(750);
+  lcd_1.print(" bed?");
+  delay(2200);
+  
+  // Line 3
+  lcd_1.clear();
+  lcd_1.setCursor(0,0);
+  lcd_1.print("how");
+  delay(500);
+  lcd_1.print(" can");
+  delay(450);
+  lcd_1.print(" you");
+  delay(380);
+  lcd_1.print(" look");
+  delay(730);
+
+  lcd_1.setCursor(0,1);
+  lcd_1.print("at");
+  delay(300);
+  lcd_1.print(" me");
+  delay(450);
+  lcd_1.print(" and");
+  delay(680);
+  
+  lcd_1.clear();
+  lcd_1.setCursor(0,0);
+  lcd_1.print("pretend");
+  delay(2100);
+
+  // Line 4
+  lcd_1.clear();
+  lcd_1.setCursor(0,0);
+  lcd_1.print("I'm");
+  delay(400);
+  lcd_1.print(" someone");
+  delay(400);
+  
+
+  lcd_1.setCursor(0,1);
+  lcd_1.print("you've");
+  delay(350); 
+  lcd_1.print(" never");
+  delay(400);
+  lcd_1.print(" met?");
+
+  while(1); //stops the loop
+} 
